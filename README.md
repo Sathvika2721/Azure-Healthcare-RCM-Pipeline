@@ -2,6 +2,9 @@
 This project implements an end-to-end data pipeline for processing healthcare Revenue Cycle Management (RCM) data. It ingests, cleans, transforms, and aggregates patient and claims data to produce analytics-ready datasets.
 The pipeline follows the Medallion architecture (Bronze → Silver → Gold) and is built entirely on Azure services with Python and PySpark for transformations. 
 
+<img width="1156" height="650" alt="Untitled Diagram" src="https://github.com/user-attachments/assets/074f8f99-43dc-40e8-82e7-4d27d7b609b5" />
+
+
 # What the Pipeline Does
 - Pulls data from MySQL, Azure SQL, flat files, and REST APIs.
 - Stores all raw data in Azure Data Lake (Bronze).
