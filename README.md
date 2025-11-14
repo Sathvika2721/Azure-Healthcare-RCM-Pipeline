@@ -23,13 +23,13 @@ Azure Data Factory, Azure Databricks, ADLS Gen2, Delta Lake, Synapse Analytics, 
 Python libraries: pyspark, delta, pandas, azure-storage-blob, requests.
 
 # How It Works
-1. **Ingestion**: ADF loads raw EMR, claims, and API data into Bronze in ADLS.
+1. **Ingestion**: ADF loads raw EHR, claims, and API data into Bronze in ADLS.
 2. **Transformation**: Databricks cleans and structures the data into Silver.
 3. **Aggregation**: Gold layer computes RCM metrics like claim approvals, reimbursements, and visit trends.
 4. **Analytics**: Synapse queries Gold datasets; Power BI visualizes operational and financial insights.
 
 # Outputs
-1. **Bronze**: Raw EMR, claims, CPT, ICD, and NPI data.
+1. **Bronze**: Raw EHR, claims, CPT, ICD, and NPI data.
 2. **Silver**: Cleaned patient, provider, encounter, transaction, CPT, ICD, and NPI tables.
 3. **Gold**: Dimensional models and fact tables for RCM analytics.
 4. **Power BI Dashboards** for claims and revenue performance.
